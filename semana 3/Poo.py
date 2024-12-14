@@ -7,7 +7,7 @@ class TemperaturaSemanal:
             dia = int(input(f"Día {i}: "))
             self.dias.append(dia)
 
-    def calcular_promedio(self):
+    def calcular(self):
         suma = sum(self.dias)
         promedio = suma / len(self.dias)
         print(f"El promedio semanal es de {promedio:.2f} grados")
@@ -16,5 +16,5 @@ class TemperaturaSemanal:
 
 temperatura_semanal = TemperaturaSemanal()
 temperatura_semanal.pedir_datos()
-temperatura_semanal.calcular_promedio()
+temperatura_semanal.calcular()
 
